@@ -1,0 +1,11 @@
+	LD E,03H	
+	LD D,05H
+	LD A,D
+	ADD A,D 
+	LD L,A
+	LD A,00H
+	ADC A,00H
+	LD H,A
+	LD (1810), HL
+	HALT
+	.END	
